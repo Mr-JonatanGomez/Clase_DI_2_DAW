@@ -1,16 +1,18 @@
-
-body{
-    width: 100%;
-
+body {
+  width: 100%;
 }
 
-
-.encabezado{
-    color: #1fb6b8;
-    text-align: center;
+.encabezado {
+  color: #1fb6b8;
+  text-align: center;
 }
 
-.middle{
+.middle {
+  text-align: center;
+}
 
-    align-items: center;
+.article1 {
+  margin: 0 auto; /*centra al medio horizontalmente*/
+  text-align: justify;
+  width: 600px;
 }
