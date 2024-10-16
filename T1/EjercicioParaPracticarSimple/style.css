@@ -11,8 +11,17 @@ body {
   text-align: center;
 }
 
+.initPic {
+  width: 75%;
+}
+.eventPicture {
+  width: 25%; /*para poder hacerlo hacerlo responsive*/
+  max-width: 400px;
+  min-width: 120px;
+}
 .article1 {
   margin: 0 auto; /*centra al medio horizontalmente*/
   text-align: justify;
-  width: 600px;
+  width: 75%;
+  min-width: 360px;
 }
