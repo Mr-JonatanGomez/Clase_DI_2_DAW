@@ -1,0 +1,35 @@
+body {
+  width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  text-align: center;
+  border: solid 2px;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.thead,
+.rhead {
+  font-weight: bolder;
+  height: 10px;
+}
+
+td {
+  height: 2px;
+  border: solid 1px;
+  padding: 5px;
+}
+
+.valor {
+  height: 50px;
+}
+
+.cuenta {
+  width: 120px;
+}
