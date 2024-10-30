@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario</title>
+    <link rel="stylesheet" href="./utils/css/style.css" />
+  </head>
+  <body>
+    <h3>Un tipico y complejo formulario</h3>
+    <form>
+      <table>
+        <tr>
+          <td class="cab">Nombre:</td>
+          <td class="datos">
+            <input type="text" />
+            F. Nac.:
+            <input type="date" />
+            DNI: &nbsp;
+            <input type="text" class="peq" />
+          </td>
+        </tr>
+        <tr>
+          <td class="cab">Apellidos:</td>
+          <td class="datos">
+            <input type="text" class="gr" />
+          </td>
+        </tr>
+        <tr>
+          <td class="cab">Calle y número:</td>
+          <td class="datos">
+            <input type="text" class="gr" />
+          </td>
+        </tr>
+        <tr>
+          <td class="cab">Codigo postal:</td>
+          <td class="datos">
+            <input type="number" class="peq" />
+            Ciudad:
+            <input type="text" class="mdg" />
+          </td>
+        </tr>
+        <tr>
+          <td class="cab">Provincia:</td>
+          <td class="datos">
+            <input type="text" class="mdp" />
+            Teléfono:
+            <input type="number" class="mdp" />
+          </td>
+        </tr>
+        <tr>
+          <td class="cab">Opción:</td>
+          <td class="datos">
+            <select name="s1" id="select">
+              <option value="Op1">OPCION 1</option>
+            </select>
+            Escoja una opcion
+          </td>
+        </tr>
+        <tr>
+          <td class="cab">Comentarios personales:</td>
+          <td class="datos"><textarea name="area" id="area"></textarea></td>
+        </tr>
+        <tr>
+          <td class="cab"><b>Pulse aquí:</b></td>
+
+          
+         <!--  <td class="datos">
+            <input type="submit" value="Enviar datos" class="btn" />
+            <input type="reset" value="Borrar datos" class="btn" >
+          </td> -->
+          <td class="datos">
+            <div class="btn-div">
+              <input type="submit" value="Enviar datos" class="btn" />
+              <input type="reset" value="Borrar datos" class="btn" />
+            </div>
+          </td>
+
+        </tr>
+      </table>
+    </form>
+  </body>
 </html>

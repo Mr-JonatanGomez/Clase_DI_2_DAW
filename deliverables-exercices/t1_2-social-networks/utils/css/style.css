@@ -28,8 +28,9 @@ td {
 
 .valor {
   height: 50px;
+  min-width: 190px;
 }
 
 .cuenta {
-  width: 120px;
+  min-width: 120px;
 }

@@ -1,0 +1,68 @@
+body{
+    width: 100%;
+   
+}
+
+h3{
+    text-align: center;
+    margin: 25px auto;
+}
+
+table{
+    margin: 0 auto;
+    border: ridge 3px rgb(144, 216, 250);
+    max-width: 98%;
+    
+}
+
+.cab{
+    border: solid 1px black;
+    padding: 4px;
+    
+    width: 105px;
+}
+
+.datos{
+    
+    border: solid 1px black;
+    padding: 4px;
+   
+
+}
+
+.peq{
+    width: 70px;
+}
+.gr{
+    /* width: 380px; */
+    width: 75%;
+}
+.mdg{
+    /* width: 380px; */
+    width: 58%;
+}
+.mdp{
+    /* width: 380px; */
+    width: 36%;
+}
+#area{
+    width: 95%;
+}
+
+/* .btn{
+  
+   
+    
+    margin: 0 auto;
+    display: flex;
+ } */
+
+ .btn-div{
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Espacio entre botones */
+    
+
+}
+
+
