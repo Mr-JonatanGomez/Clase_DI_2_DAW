@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema1.1 Ejercicio-form</title>
+    <link rel="stylesheet" href="./utils/css/style.css" />
+  </head>
+  <body>
+    <form action="">
+      <label>Name:</label><input type="text" /> <br /><br />
+      <label>Password:</label><input type="password" /><br /><br />
+      <label>Year of birth:</label
+      ><input type="number" min="1920" max="2024" /><br /><br />
+      <label>Contract date:</label><input type="date" /><br /><br />
+      <label>Start hour:</label><input type="time" /><br /><br />
+      <label>Hobbies:</label><br />
+      <label>Football</label><input type="checkbox" /> <label>Basketball</label
+      ><input type="checkbox" /> <label>Baseball</label
+      ><input type="checkbox" /> <label>Soccer</label><input type="checkbox" />
+      <label>Music</label><input type="checkbox" /> <label>Cinema</label
+      ><input type="checkbox" /> <label>Theatre</label
+      ><input type="checkbox" /><br /><br />
+      <label>Age range:</label> &nbsp; <label>u18</label
+      ><input type="radio" /> &nbsp; <label>Bt 19-35</label
+      ><input type="radio" />&nbsp; <label>Bt 36-65</label
+      ><input type="radio" />&nbsp; <label>Ancient</label
+      ><input type="radio" /><br /><br />
+      <label>Select your fauvorite color: </label
+      ><input type="color" /><br /><br />
+      <label>Country:</label>
+      <select name="country" id="country">
+        <option value="sp"></option>
+        <option value="sp">Spain</option>
+        <option value="sp">United States</option>
+        <option value="sp">Italy</option>
+        <option value="sp">France</option>
+        <option value="sp">United Kingdom</option></select
+      ><br /><br />
+      <label>English Level:</label
+      ><input type="range" value="50" min="0" max="100" step="10" /><br /><br />
+      <label>Writte your message:</label><br /><br />
+      <textarea
+        name="message"
+        id="mesage"
+        placeholder="You canr writte anything..."
+        rows="5"
+        cols="50"
+      ></textarea
+      ><br /><br />
+
+      <input type="submit" value="Send your info" />
+      <input type="reset" value="Delete your info" />
+    </form>
+
+    <script src="./utils/js/script.js"></script>
+  </body>
+</html>

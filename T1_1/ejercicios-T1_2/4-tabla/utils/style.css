@@ -1,0 +1,35 @@
+body{
+    width: 99%;
+    display: block;
+}
+tr{
+    max-width: 10%;
+}
+td{
+   padding: 15px;
+   min-width: 50px;
+   text-align: center;
+   border-radius: 3px;
+}
+
+#table1{
+   margin: 100px auto;/* horizontal */
+   border-radius: 3px;
+}
+#free{
+    background-color: rgb(241, 239, 101);
+    font-weight: bolder;
+}
+#hour{
+    background-color: rgb(235, 149, 216);
+}
+
+.hour{
+    background-color: rgb(255, 222, 248);
+    font-weight: bolder;
+}
+
+#thead{
+    background-color: rgb(145, 180, 245);
+    font-weight: bolder;
+}

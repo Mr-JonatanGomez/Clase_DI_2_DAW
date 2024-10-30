@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule</title>
+    <link rel="stylesheet" href="./utils/style.css" />
+  </head>
+  <body>
+    <table id="table1" border="2">
+      <tr id="thead">
+        <td id="hour">HOUR</td>
+        <td>Monday</td>
+        <td>Tuesday</td>
+        <td>Wednesday</td>
+        <td>Thurday</td>
+        <td>Friday</td>
+      </tr>
+
+      <tr>
+        <td class="hour">8:30</td>
+        <td>Empresa</td>
+        <td rowspan="2">Despliegue</td>
+        <td>DI</td>
+        <td rowspan="2">DI</td>
+        <td rowspan="2">WDClient</td>
+      </tr>
+      <tr>
+        <td class="hour">9:30</td>
+        <td rowspan="2">WDClient</td>
+        <td rowspan="2">WDServer</td>
+      </tr>
+      <tr>
+        <td class="hour">10:30</td>
+        <td>DI</td>
+        <td>Inglés</td>
+        <td>DI</td>
+      </tr>
+      <tr id="free">
+        <td class="hour">11:30</td>
+        <td colspan="5">FREE-TIME</td>
+      </tr>
+      <tr>
+        <td class="hour">12:00</td>
+        <td rowspan="3">WDServer</td>
+        <td rowspan="3">WDClient</td>
+        <td rowspan="3">Despliegue</td>
+        <td>Inglés</td>
+        <td rowspan="2">WDServer</td>
+      </tr>
+      <tr>
+        <td class="hour">13:00</td>
+        <td rowspan="2">WDServer</td>
+      </tr>
+      <tr>
+        <td class="hour">14:00</td>
+        <td>Empresa</td>
+      </tr>
+    </table>
+  </body>
+</html>
