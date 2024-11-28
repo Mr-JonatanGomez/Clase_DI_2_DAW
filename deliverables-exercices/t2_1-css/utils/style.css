@@ -1,0 +1,63 @@
+body{
+    margin:2%;
+    width: 98%; /* le tengo que poner 98 para que no me salga el scroll */
+    background-color: rgb(186, 199, 199);
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+header{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(0, 94, 0);
+    width: 100%;
+    
+}
+
+
+
+.row{
+    margin: 0 auto;
+    width: 80%;
+    flex: 1;
+    display: flex;
+    gap: 100px; 
+    margin-top: 0px;
+}
+.col{
+    flex: 1; /* reparto equitativo */
+    border-left: 1px solid;
+    border-right: 1px solid;
+
+    height: fit-content;
+    /* display: block; */
+}
+
+
+
+.article{
+    margin: 2ex auto;
+    width: 90%;
+    overflow: hidden;/* oculata lo que sobresale al redondear */
+    border-radius: 12px;
+}
+
+.tit{
+    font-weight: bolder;
+    color:rgb(255, 255, 255);
+    background-color: rgb(99, 146, 235);
+    width: 100%;
+    padding: 4px;
+    
+}
+.art{
+    padding: 4px;
+    background-color: rgb(255, 255, 255);
+
+    
+    
+    width: 100%;
+}
+
