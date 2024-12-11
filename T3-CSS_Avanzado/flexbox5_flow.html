@@ -4,21 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-      <!-- La propiedad flex-direction define la dirección principal, es decir, la dirección en la que se colocan los elementos flexibles en los contenedores.	
-  Los posibles valores de la propiedad flex-direction son:
-
-  -row: los elementos se colocan horizontalmente de izquierda a derecha
-  -row-reverse: los elementos se colocan horizontalmente de derecha a izquierda
-  -column: los elementos se colocan verticalmente de arriba abajo.
-  -column-reverse: los elementos se colocan verticalmente de abajo arriba.
-  -->
+     <!-- La propiedad compuesta flex-flow permite establecer simultáneamente las dos propiedades flex-direction y flex-wrap.
+  Como no hay ambigüedad, el orden de los valores de flex-direction y flex-wrap no es importante.
+	  -->
     <style>
-        div{display: inline-flex; flex-direction: row-reverse; margin-bottom: 5px; background-color: #eee;}
+        div{display: inline-flex; flex-flow: wrap row-reverse; margin-bottom: 5px; background-color: #eee;}
         p{width: 100px; border: solid 1px black; margin: 2px;}
         .p1{color: blue;width: 100%;}
         .div2{
         background-color: bisque;
-        flex-direction: column-reverse;
+        
         }
     </style>
 </head>
@@ -38,7 +33,7 @@
   </div>
 
   <div>
-    <p class="p1"><b>display: inline-flex, flex-direction: column-reverse</b>, 
+    <p class="p1"><b>display: inline-flex, flex: wrap</b>, 
       la direccion de los hijos es inversa a su orden html en el div 1, el div 2, esta como row
     </p>
     
