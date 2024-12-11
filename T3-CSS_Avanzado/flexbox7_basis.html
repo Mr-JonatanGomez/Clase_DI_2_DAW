@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+     <!-- El tamaño de los elementos flexibles viene determinado en principio 
+      por su contenido. Si hay espacio suficiente en la dirección principal, 
+      los elementos se ensanchan para mostrar todo su contenido en una sola 
+      línea.
+  La propiedad flex-basis establece el tamaño inicial del elemento, antes de 
+  que se reparta en su caso el espacio libre.
+
+	Los posibles valores de la propiedad flex-basis son:
+
+	content: el tamaño inicial viene determinado por el contenido del elemento.
+	auto: el tamaño inicial viene determinado por las propiedades width y/o 
+  height. tamaño: indica el tamaño inicial exacto.
+	  -->
+    <style>
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        background-color: #eee;
+      }
+      p {
+        flex-basis: 20%;
+        width: 100px;
+        border: solid 1px black;
+        margin: 2px;
+      }
+      .p1 {
+        color: blue;
+        width: 100%;
+      }
+      .div2 {
+        background-color: bisque;
+      }
+      p.primero {
+      
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p class="primero">Cuarto parrafo</p>
+    </div>
+
+    <div class="div2">
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+    </div>
+
+    <div>
+      <p class="p1">
+        <b>display: flex en el div</b>,<b>flex: basis; 
+        en el p</b> establece el tamaño inicial del parrafo, 
+        pero si este no cabe, se modificará.
+        Ahora está al 20% del contenedor
+      </p>
+    </div>
+  </body>
+</html>

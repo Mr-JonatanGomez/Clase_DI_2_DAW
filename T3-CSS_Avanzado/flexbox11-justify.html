@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   <!-- La propiedad justify-content establece la forma en que se 
+    reparte el espacio libre disponible en la dirección principal.
+
+	  flex-start: los elementos se sitúan al principio de la dirección 
+    principal, es decir, el espacio disponible se sitúa al final.
+
+	  flex-end: los elementos se sitúan al final de la dirección 
+    principal, es decir, el espacio disponible se sitúa al principio
+
+	  center: los elementos se sitúan en el centro de la dirección 
+    principal, es decir, el espacio disponible se reparte entre el
+    principio y el final.
+
+	  space-between: el espacio disponible se reparte entre los elementos
+
+	  space-around: el espacio disponible se reparte entre los elementos
+    y en los extremos
+	  -->
+    <style>
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 5px;
+        background-color: #eee;
+      }
+      p {
+        width: 100px;
+        border: solid 1px black;
+        margin: 2px;
+      }
+      .p1 {
+        color: blue;
+        width: 100%;
+      }
+      .p2 {
+        color: rgb(255, 0, 128);
+        width: 100%;
+      }
+      .div2 {
+        background-color: bisque;
+      }
+      p.primero {
+        background-color: #c29c9c;
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p class="primero">Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+    </div>
+
+    <div class="div2">
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+    </div>
+
+    <div>
+      <p class="p1">
+        <b>La propiedad justify-content establece la forma en que se 
+          reparte el espacio libre disponible en la dirección principal.</b><br><br>En este ejemplo space-around 
+      </p>
+    </div>
+    <div>
+      <p class="p2">
+        flex-start: los elementos se sitúan al principio de la dirección 
+        principal, es decir, el espacio disponible se sitúa al final.
+        <br><br>
+        flex-end: los elementos se sitúan al final de la dirección 
+        principal, es decir, el espacio disponible se sitúa al principio
+        <br><br>
+        center: los elementos se sitúan en el centro de la dirección 
+        principal, es decir, el espacio disponible se reparte entre el
+        principio y el final.
+        <br><br>
+        space-between: el espacio disponible se reparte entre los elementos
+        <br><br>
+        space-around: el espacio disponible se reparte entre los elementos
+        y en los extremos
+      </p>
+    </div>
+  </body>
+</html>

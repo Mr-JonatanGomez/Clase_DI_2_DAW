@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <!-- Factor de expansión de los elementos flexibles: flex-grow
+	La propiedad flex-grow hace que los elementos crezcan hasta ocupar todo el espacio disponible en la dirección principal.
+	La propiedad flex-grow toma valores enteros que indican la proporción en que se reparte el espacio.
+    Si todos los elementos toman el mismo valor, el espacio se reparte a partes iguales.
+	-->
+    <style>
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        background-color: #eee;
+      }
+      p {
+        flex-grow: 1;
+        width: 100px;
+        border: solid 1px black;
+        margin: 2px;
+      }
+      .p1 {
+        color: blue;
+        width: 100%;
+      }
+      .p2 {
+        color: rgb(255, 0, 128);
+        width: 100%;
+      }
+      .div2 {
+        background-color: bisque;
+      }
+      p.primero {
+        flex-grow: 2;
+        background-color: #c29c9c;
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p class="primero">Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+    </div>
+
+    <div class="div2">
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+    </div>
+
+    <div>
+      <p class="p1">
+        <b>display: flex en el div</b>,<b>flex-grow: 1; 
+        en el p</b> establece el tamaño inicial de proporcion, 
+        pero al parrafo 3 del div1, le damos un grow 2, que 
+        hará crecer su proporcion, con respecto a los otros p <br> Puede darse que al encoger la pantalla, el grow 2 llegue a edir igual que el 1
+      </p>
+    </div>
+    <div>
+      <p class="p2">
+        <b>display: flex en el div</b>,flex-shrink: 1; 
+        es la proporcion de estrechamiento
+      </p>
+    </div>
+  </body>
+</html>

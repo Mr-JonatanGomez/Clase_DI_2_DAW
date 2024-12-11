@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <!-- La propiedad compuesta flex permite establecer simultáneamente 
+   las tres propiedades flex-grow, flex-shrink y flex-basis. Como 
+   puede haber ambigüedad, los valores se interpretan en ese orden.
+	  -->
+    <style>
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        background-color: #eee;
+      }
+      p {
+        flex: initial;
+        width: 100px;
+        border: solid 1px black;
+        margin: 2px;
+      }
+      .p1 {
+        color: blue;
+        width: 100%;
+      }
+      .p2 {
+        color: rgb(255, 0, 128);
+        width: 100%;
+      }
+      .div2 {
+        background-color: bisque;
+      }
+      p.primero {
+        
+        background-color: #c29c9c;
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p class="primero">Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+    </div>
+
+    <div class="div2">
+      <p>Primer Parrafo</p>
+      <p>Segundo Parrafo</p>
+      <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+      <p>Cuarto parrafo</p>
+    </div>
+
+    <div>
+      <p class="p1">
+        <b>Jose Manuel dice que no la ha usado mucho, ya que no ayuda demasiado</b>
+      </p>
+    </div>
+  
+  </body>
+</html>
