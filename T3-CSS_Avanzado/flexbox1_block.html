@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Existen dos tipos de contenedores flexs: de bloque y en-línea.
+      La propiedad display permite definir el tipo de contenedor flexible:
+      flex: el contenedor se comporta como un bloque-->
+    <style>
+        div{display: flex; margin-bottom: 5px; background-color: #eee;}
+        p{width: 100px; border: solid 1px black; margin: 2px;}
+        .p1{color: blue;width: 100%;}
+    </style>
+</head>
+<body>
+      <div>
+    <p>Primer Parrafo</p>
+    <p>Segundo Parrafo</p>
+    <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+    <p>Cuarto parrafo</p>
+  </div>
+
+  <div>
+    <p>Primer Parrafo</p>
+    <p>Segundo Parrafo</p>
+    <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+    <p>Cuarto parrafo</p>
+  </div>
+
+  <div>
+    <p class="p1"><b>display: flex, activado</b>, sin esto, los p, div, h1, ul...se colocan por defecto en bloque
+    , los span, a, img, strong...por defecto van en linea
+    </p>
+  </div>
+</body>
+</html>

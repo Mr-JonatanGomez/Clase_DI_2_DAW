@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- inline-flex: el contenedor se comporta como un elemento en-línea (ocupa sólo el espacio horizontal necesario 
+       y pueden colocarse unos detrás de otros en la misma línea)-->
+    <style>
+        div{display: inline-flex; margin-bottom: 5px; background-color: #eee;}
+        p{width: 100px; border: solid 1px black; margin: 2px;}
+        .p1{color: blue;width: 100%;}
+    </style>
+</head>
+<body>
+      <div>
+    <p>Primer Parrafo</p>
+    <p>Segundo Parrafo</p>
+    <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+    <p>Cuarto parrafo</p>
+  </div>
+
+  <div>
+    <p>Primer Parrafo</p>
+    <p>Segundo Parrafo</p>
+    <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+    <p>Cuarto parrafo</p>
+  </div>
+
+  <div>
+    <p class="p1"><b>display: inline-flex,</b>, se colocan los div en linea si el ancho lo permite
+    </p>
+  </div>
+</body>
+</html>

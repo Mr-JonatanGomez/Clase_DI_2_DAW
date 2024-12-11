@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- La propiedad flex-direction define la dirección principal, es decir, la dirección en la que se colocan los elementos flexibles en los contenedores.	
+  Los posibles valores de la propiedad flex-direction son:
+
+  -row: los elementos se colocan horizontalmente de izquierda a derecha
+  -row-reverse: los elementos se colocan horizontalmente de derecha a izquierda
+  -column: los elementos se colocan verticalmente de arriba abajo.
+  -column-reverse: los elementos se colocan verticalmente de abajo arriba.
+  -->
+    <style>
+        div{display: inline-flex; flex-direction: row-reverse; margin-bottom: 5px; background-color: #eee;}
+        p{width: 100px; border: solid 1px black; margin: 2px;}
+        .p1{color: blue;width: 100%;}
+        .div2{
+        background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+      <div>
+    <p>Primer Parrafo</p>
+    <p>Segundo Parrafo</p>
+    <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+    <p>Cuarto parrafo</p>
+  </div>
+
+  <div class="div2">
+    <p>Primer Parrafo</p>
+    <p>Segundo Parrafo</p>
+    <p>Tercer Parrafo Tercer Parrafo Tercer Parrafo Tercer Parrafo</p>
+    <p>Cuarto parrafo</p>
+  </div>
+
+  <div>
+    <p class="p1"><b>display: inline-flex, felx-direction: row-reverse</b>, 
+      la direccion de los hijos es inversa a su orden html
+    </p>
+  </div>
+</body>
+</html>
