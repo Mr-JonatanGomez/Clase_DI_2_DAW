@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        @media screen and (max-width: 800px) {
-            html{
-                background-color: lightcoral;
-            }
+      @media screen and (max-width: 800px) {
+        html {
+          background-color: lightcoral;
         }
-
-        @media screen and (min-width: 801px) and (max-width: 950px) {
-            html{
-                background-color: lightyellow;
-            }
-        }
-        @media screen and (min-width: 950px) {
-      html {
-        background-color: lightgreen;
       }
-    }
+
+      @media screen and (min-width: 801px) and (max-width: 950px) {
+        html {
+          background-color: lightyellow;
+        }
+      }
+      @media screen and (min-width: 950px) {
+        html {
+          background-color: lightgreen;
+        }
+      }
+      div {
+        background-color: white;
+        border-radius: 18px;
+        padding: 20px;
+      }
     </style>
-</head>
-<body>
-    <p>El color de fondo de esta página cambia según el ancho de la pantalla:</p>
-  <ul>
-    <li>si es menor de 800px, el color es azul</li>
-    <li>desde 800px hasta 950px, el color es rojo</li>
-    <li>si es mayor o igual a 950px, el color es verde</li>
-  </ul>
+  </head>
+  <body>
+    <p>
+      El color de fondo de esta página cambia según el ancho de la pantalla:
+    </p>
+    <ul>
+      <li>si es menor de 800px, el color es azul</li>
+      <li>desde 800px hasta 950px, el color es rojo</li>
+      <li>si es mayor o igual a 950px, el color es verde</li>
+    </ul>
 
-  <p>El ancho actual es <strong><span id="size"></span>px</strong></p>
+    <p>
+      El ancho actual es <strong><span id="size"></span>px</strong>
+    </p>
 
+    <div>
+      Esto puede Usarse, para dar distintos parametros o functions segun
+      convenga a las medidas establecidas
+    </div>
 
-  <script>
-    function anchura(){
+    <script>
+      function anchura() {
         let ancho = window.innerWidth
         let texto = document.querySelector("#size")
-        texto.textContent= ancho
-    }
-    window.onresize = ()=>{anchura()}
-  </script>
+        texto.textContent = ancho
+      }
+      window.onresize = () => {
+        anchura()
+      }
+    </script>
 
-
-  <!-- <script>
+    <!-- <script>
     var ancho = window.innerWidth;
     var texto = document.getElementById("size");
     texto.textContent = ancho;
@@ -54,6 +68,5 @@
       texto.textContent = ancho;
     }
   </script> -->
-  
-</body>
+  </body>
 </html>
