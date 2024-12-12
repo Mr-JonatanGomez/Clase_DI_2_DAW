@@ -60,18 +60,29 @@ div.divSup{
     border-radius: 6px;
 }
 .izq{
-    
+    display: flex;
+    flex-direction: column;
     border: solid 1px blue;
     border-radius: 8px;
     flex: 2 1 0;
-    padding: 10px;
+    padding: 20px;
+    
+}
+.izq img{
+    border-radius: 24px;
+    width: 80%;
 }
 .der{
+    display: flex;
+    flex-direction: column;
     border: solid 1px greenyellow;
     border-radius: 8px;
     flex: 1 1 0;
-    padding: 10px;
-
+    padding: 20px;
+}
+.der img{
+    border-radius: 24px;
+    width: 80%;
 }
 
 div.divInf{
