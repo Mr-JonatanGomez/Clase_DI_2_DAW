@@ -15,7 +15,11 @@ header{
     background-color: lightblue;
     width: 100%;
     text-align: center;
-    font-size: 5.5ex;
+    font-size: 5ex;
+    padding: 5px;
+}
+header h4{
+    margin-top: -15px;
 }
 .container{
     font-size: 4.5ex;
@@ -29,18 +33,24 @@ header{
 nav{
     flex-wrap: wrap;
     height: 100%;
-    width: 15%;
+    width: 10%;
     min-width: fit-content;
-    border: solid 2px;
-    border-radius: 6px;
+  
     padding: 25px/* usado 35 para compensar el LIST por izquierda*/
 
     
 
 }
+
+.listaMenu a{
+    
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
 .gen{
 
-    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -54,18 +64,23 @@ div.divSup{
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     
-    
-    border: solid 2px;
-    border-radius: 6px;
+    gap: 20px;
+
 }
 .izq{
     display: flex;
     flex-direction: column;
-    border: solid 1px blue;
-    border-radius: 8px;
-    flex: 2 1 0;
+    flex-wrap: wrap;
+    flex: 2 1 0; /* grow shrink basis */
+
+    min-width: 300px;
+
+    border: solid 1px rgb(50,50,50);
+    border-radius: 16px;
     padding: 20px;
+    
     
 }
 .izq img{
@@ -75,9 +90,13 @@ div.divSup{
 .der{
     display: flex;
     flex-direction: column;
-    border: solid 1px greenyellow;
-    border-radius: 8px;
-    flex: 1 1 0;
+    flex-wrap: wrap;
+    flex: 1 1 0;/* grow shrink basis */
+
+    min-width: 300px;
+
+    border: solid 1px rgb(50,50,50);
+    border-radius: 16px;
     padding: 20px;
 }
 .der img{
@@ -86,15 +105,40 @@ div.divSup{
 }
 
 div.divInf{
-    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+
+
+    
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 
-    border: solid 2px;
-    border-radius: 6px;
+    gap: 20px;
 }
 
-.listaMenu a{
+
+.inf1,.inf2,.inf3{
+
+    min-width: 170px;
+
     
-    text-decoration: none;
-    color: rgb(0,0,0);
+    border-radius: 24px;
+    border: solid 1px;
+    flex-direction: column;
+    flex: 1 1 20%;
+    flex-wrap: wrap;
+
+    padding: 15px;
+    
 }
+
+.divInf img{
+    border-radius: 16px;
+    width: 100%;
+    max-height: 70%;
+}
+
+
+
+

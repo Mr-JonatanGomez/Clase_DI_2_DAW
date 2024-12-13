@@ -35,6 +35,29 @@ body::before {
   z-index: -1;
 }
 
+/* Esta media query le da un border ridge 
+al form cuando la pantalla alcanza los 700px */
+
+@media screen and (min-width: 700px) {
+  .form {
+    
+    font-style: oblique;
+    font-weight: bolder;
+    text-align: justify;
+  
+    margin: 5vh auto;
+    padding: 25px;
+    
+  
+    width: 50%;
+    
+    border: ridge 4px rgba(255, 115, 0, 0.2);
+  
+    display: flex;
+    justify-content: center;
+  }
+  }
+
 header h1 {
   min-height: 7vh;
   min-width: 100%;
@@ -143,16 +166,16 @@ footer {
 .productos {
   font-style: oblique;
   text-align: justify;
-  justify-content: center;
+  justify-content: space-around;
 
   margin: 2vh auto;
   padding: 15px;
 
   width: 95%;
-  gap: 30px;
+  gap: 10px;
 
   display: flex;
-  box-sizing: border-box;
+
   flex-wrap: wrap;
 }
 
@@ -161,7 +184,7 @@ footer {
 #prod3 {
   min-width: 200px;
   max-width: 300px;
-  justify-content: center;
+
   padding: 25px;
   border: ridge 4px rgba(255, 115, 0, 0.2);
   border-radius: 36px;
@@ -222,15 +245,18 @@ footer {
 
   margin: 5vh auto;
   padding: 25px;
-  border: ridge 4px rgba(255, 115, 0, 0.2);
+
   border-radius: 30px;
   width: 50%;
-  max-width: 800px;
-  min-width: 400px;
+  
+ 
 
   display: flex;
   justify-content: center;
 }
+
+
+
 
 .fila {
   display: flex;
@@ -239,7 +265,9 @@ footer {
 }
 
 .cab {
-  display: inline-block;
+  display: flex;
+
+  flex-wrap: wrap;
   border: ridge 4px rgba(255, 115, 0, 0.2);
   border-radius: 12px;
   background-color: white;
@@ -249,6 +277,10 @@ footer {
 }
 
 .dato {
+  display: flex;
+
+  flex-wrap: wrap;
+
   margin: 6px 6px;
   padding: 6px;
   min-width: 210px;
@@ -271,6 +303,7 @@ footer {
   background-color: white;
   min-height: 120px;
   min-width: 340px;
+  max-width: 380px;
 }
 
 .envio {
