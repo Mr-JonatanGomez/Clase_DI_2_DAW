@@ -1,0 +1,58 @@
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0 0;
+    width: 100%;
+}
+
+header{
+    margin: 0px 0px;
+    padding: 1px;
+    text-align: center;
+    width: 100%;
+    background-color: blue;
+    color: white;
+
+}
+
+.main{
+    margin: 25px auto;
+    width: 80%;
+    height: 100%;
+
+
+    display: flex;
+    
+    align-items: stretch;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fruta{
+    border: solid 2px;
+    width: 260px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.fruta p{
+    padding: 5px;
+}
+
+.titulo{
+display: flex;
+flex-direction: row;
+background-color: lightgrey;
+
+}
+
+img{
+    padding: 5px;
+    
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    border-radius: 0px 0px 8px 0px;
+}
