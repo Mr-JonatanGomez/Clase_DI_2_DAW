@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+}
+
+body {
+  
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+
+  /*PARA EL FONDO*/
+  background-image: url("./utils/fondo2.webp"); /* Usa la ruta correcta de la imagen */
+  background-size: cover; /* Escala la imagen para cubrir toda el área del viewport */
+  background-attachment: fixed;
+  background-position: center; /* mantiene el centro del fondo */
+}
+
+/*PARA PODER DARLE TRANSPARENCIA AL FONDO*/
+body::before {
+  height: 100%;
+  content: ""; /* Crea un pseudo-elemento vacío */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.714);
+
+  z-index: -1;
+}
+
+
+
+header h1 {
+  background-color: rgba(255, 115, 0, 0.507);
+}
+
+header nav {
+
+/*   text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center; */
+
+  transition: 3s ease;
+  gap: 25%;
+  overflow: hidden;
+
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+header nav:hover {
+  background-color: rgba(0, 0, 0, 0.367);
+}
+
+
+
+main{
+  flex-grow: 1;
+}
+
+
+/* .btn {
+  min-width: fit-content;
+  padding: 9px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  background-color: rgba(255, 115, 0, 0);
+  color: rgb(0, 0, 0);
+  transition: 1.3s ease;
+  box-sizing: border-box;
+} */
+.btn:hover {
+  background-color: rgba(255, 115, 0, 0.5);
+}
+
+.intro {
+  font-style: oblique;
+  text-align: justify;
+
+  padding: 25px;
+  border: ridge 4px rgba(255, 115, 0, 0.2);
+  border-radius: 36px;
+  
+}
+
+#img-tienda {
+  width: 95%;
+  max-width: 400px;
+  display: block;
+  margin: auto;
+}
+
+footer {
+ 
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.867);
+}
+
+.p-IA {
+  font-size: 0.8em;
+}
+
+/* CSS de producto */
+
+.productos {
+  font-style: oblique;
+  text-align: justify;
+  justify-content: space-around;
+
+  margin: 2vh auto;
+  padding: 15px;
+
+  width: 95%;
+  gap: 10px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+#prod1,
+#prod2,
+#prod3 {
+  min-width: 200px;
+  max-width: 300px;
+
+  padding: 25px;
+  border: ridge 4px rgba(255, 115, 0, 0.2);
+  border-radius: 36px;
+  background-color: rgba(255, 115, 0, 0.2);
+}
+
+.nombreProducto {
+  font-style: normal;
+  text-align: center;
+}
+
+.img-product {
+  padding: 15px 0;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.precioProducto {
+  margin-top: 10px;
+  font-style: normal;
+  text-align: center;
+}
+
+.ultima {
+  margin-top: 10px;
+  padding: 4px 0;
+  font-style: normal;
+  text-align: center;
+  background-color: rgba(255, 217, 0, 0.375);
+  border-radius: 16px;
+}
+
+.buyIt {
+  width: 300px;
+  margin-top: 15px;
+  align-items: center;
+  padding: 4px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  border: ridge 4px rgba(255, 115, 0, 0.2);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.imgCarrito {
+  max-width: 30px;
+}
+
+/* PAGINA CONTAC US */
+
+.form {
+  /* PRIMERO LAS MISMAS REGLAS QUE INTRO */
+  font-style: oblique;
+  font-weight: bolder;
+  text-align: justify;
+
+  margin: 5vh auto;
+  padding: 25px;
+
+  border-radius: 30px;
+  width: 50%;
+  
+ 
+
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.fila {
+  display: flex;
+  justify-content: center; /* Centra los elementos .cab y .dato horizontalmente */
+  margin-bottom: 10px; /* Espacio entre las filas */
+}
+
+.cab {
+  display: flex;
+
+  flex-wrap: wrap;
+  border: ridge 4px rgba(255, 115, 0, 0.2);
+  border-radius: 12px;
+  background-color: white;
+  margin: 6px 6px;
+  padding: 6px;
+  min-width: 80px;
+}
+
+.dato {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  margin: 6px 6px;
+  padding: 6px;
+  min-width: 210px;
+  border: ridge 4px rgba(255, 115, 0, 0.2);
+  border-radius: 12px;
+}
+
+.selecc {
+  margin: 6px 16px;
+  padding: 6px;
+  min-width: 74px;
+  border: ridge 4px rgba(255, 115, 0, 0.2);
+  border-radius: 12px;
+  background-color: white;
+}
+
+#area {
+  border: ridge 4px rgba(255, 115, 0, 0.2);
+  border-radius: 12px;
+  background-color: white;
+  min-height: 120px;
+  min-width: 340px;
+  max-width: 380px;
+}
+
+.envio {
+  font-weight: bolder;
+  border-radius: 12px;
+  background-color: rgb(188, 255, 199);
+  border: ridge 4px rgba(255, 115, 0, 0.7);
+  margin: 6px 6px;
+  padding: 10px 6px;
+  min-width: 80px;
+  transition: 3s ease;
+}
+
+.envio:hover {
+  background-color: rgb(44, 160, 64);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
