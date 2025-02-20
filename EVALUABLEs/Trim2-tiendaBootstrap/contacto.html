@@ -15,64 +15,60 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
+  <header>
         
-            <h1 class="text-center fw-bold p-3">JG Collection-Shop</h1>
+    <h1 class="text-center fw-bold p-3">JG Collection-Shop</h1>
 
-        
-        <nav class="d-flex justify-content-around">
-                <button class="btn fw-bold "> <a class="text-dark text-decoration-none" href="./producto.html">Productos</a></button>
-                <button class="btn fw-bold"> <a class="text-dark text-decoration-none" href="./contacto.html">Contactanos</a></button>
-            
-        </nav>
-    </header>
-    <main>
-      
-      <div class="form">
-        <form>
-          <div class="fila">
-            <label class="cab">Nombre:</label>
-            <input class="dato" type="text" required />
-          </div>
-          <div class="fila">
-            <label class="cab">Apellido:</label>
-            <input class="dato" type="text" required />
-          </div>
-          <div class="fila">
-            <label class="cab">Email:</label>
-            <input class="dato" type="email" required />
-          </div>
-          <div class="fila">
-            <label class="cab"
-            >Tipo de Item sobre el que quieres hacer consulta:</label
-            >
-          </div>
-          <div class="fila">
-            <div class="selecc">
-              <label class="dato2">FUNKO</label>
-              <input class="datoRadio" type="radio" name="consulta" />
-            </div>
-            <div class="selecc">
-              <label class="dato2">CARDS</label>
-              <input class="datoRadio" type="radio" name="consulta" />
-            </div>
-            <div class="selecc">
-              <label class="dato2">LIBROS</label>
-              <input class="datoRadio" type="radio" name="consulta" />
-            </div>
-          </div>
+
+<nav class="d-flex justify-content-around flex-wrap">
+  <button class="btn fw-bold"><a class="text-dark text-decoration-none"  href="./index.html">Pagina de Inicio</a></button>    
+  <button class="btn fw-bold "> <a class="text-dark text-decoration-none" href="./producto.html">Productos</a></button>
+    
+</nav>
+  </header>
+  <main class="px-1 px-md-5">
+    <div class="container-lg my-5 mx-auto">
+      <div>
+        <form  class="form p-5">
+          <div class="mb-3 justify-content-center">
+            <label class="form-label">Nombre:</label>
+            <input class="form-control dato" type="text" required />
           
-        <div class="fila">
-          <label class="cab">Tú consulta:</label>
-        </div>
-        
-        <div class="fila">
-          <textarea id="area" required></textarea>
-        </div>
-        <div class="fila">
-          <input class="envio" type="submit" value="Envianos tu consulta" />
-        </div>
-      </form>
+            <label class="form-label">Apellido:</label>
+            <input class="form-control dato" type="text" required />
+          
+            <label class="form-label">Email:</label>
+            <input class="form-control dato mb-4" type="email" required />
+          
+            <label class="form-label">
+              <p>Tipo de Item sobre el que quieres hacer consulta:</p>
+            </label>
+          
+            <div class="row mb-3 justify-content-around">
+
+              <div class="col-8 col-md-3">
+                <input class="datoRadio" type="radio" name="consulta" />
+                <label class="dato2">FUNKO</label>
+              </div>
+              <div class="col-8 col-md-3 ">
+                <input class="datoRadio" type="radio" name="consulta" />
+                <label class="dato2">CARDS</label>
+              </div>
+              <div class="col-8 col-md-3 cab selecc justify-items-between">
+                <input class="datoRadio" type="radio" name="consulta" />
+                <label class="dato2">LIBROS</label>
+              </div>
+            </div>
+          
+            <label class="cab col-8" col-md-10>Tú consulta:</label>
+          
+            <textarea class="form-control dato mb-3" id="area" required></textarea>
+            <div class="row justify-content-center">
+              <input class="btn btn-success w-50 mt-3" type="submit" value="Envia tu consulta" />
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     
   </main>
