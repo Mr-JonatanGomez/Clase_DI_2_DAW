@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./utils/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- 
+    Diseña una página web que presente información sobre 
+    tu película favorita. La página debe incluir los 
+    siguientes elementos:
+
+Un encabezado con el título de la película.
+Una breve sinopsis de la película (2-3 párrafos).
+Un póster de la película.
+Un trailer de la película en formato de video.
+Una muestra de audio con un fragmento de la banda sonora.
+    -->
+<header>
+    
+    <img class="img-fluid" src="./utils/images/logo.jpg" alt="">
+    <h1> THE DARK KNIGTH</h1>
+</header>
+<main>
+
+    <div class="container mt-3">
+        <div class="poster-sinopsis">
+
+            <div class="sinopsis fs-6 text-justify p-4">
+                <p>
+                    Batman faces the Joker, a ruthless criminal who spreads 
+                    chaos in Gotham. As the city depends on Batman, Harvey 
+                    Dent, and Jim Gordon, the Joker’s attacks test Batman’s 
+                    limits.
+                </p>
+                <p>
+                    The Joker’s schemes push Gotham to the edge, turning Dent 
+                    into Two-Face. Bruce Wayne struggles between his duty as 
+                    Batman and his love for Rachel.
+                </p>
+                <p>
+                    In the end, Batman takes the blame for Dent’s crimes, 
+                    sacrificing his reputation to protect Gotham, proving 
+                    that true heroism demands great sacrifice.
+                </p>
+            </div>
+            <div class="poster">
+               <img src="./utils/images/ledger2.jpg" alt="">
+    
+            </div>
+        </div>
+
+        <div class="audio mt-4">
+            <!-- <audio autoplay loop src=""></audio> -->
+            <iframe 
+                style="border-radius:12px" 
+                src="https://open.spotify.com/embed/track/3QRK9jOyP2qQ9ZaYdO3QCn?utm_source=generator&theme=0" 
+                width="100%" 
+                height="152" 
+                frameBorder="0" 
+                allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+
+        <div class="video my-4 d-flex justify-content-center">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/EXeTwQWrcwY?controls=1&amp;start=6" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+
+    </div>
+
+</main>
+<footer class="p-3">
+    <div class="container">
+        <p style="font-weight: bold; font-size: 1.2em; text-align: center; margin-bottom: 20px;">
+          Director: Christopher Nolan
+        </p>
+        <div class="actor-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+            <div>Christian Bale</div>
+            <div>Heath Ledger</div>
+            <div>Aaron Eckhart</div>
+            <div>Michael Caine</div>
+            <div>Gary Oldman</div>
+            <div>Morgan Freeman</div>
+            <div>Maggie Gyllenhaal</div>
+            <div>Cillian Murphy</div>
+            <div>Liam Neeson</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
